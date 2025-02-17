@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+
+:root{
+    --main-font:"Poppins", serif;
+    --heading-font:"Sansita Swashed", serif;
+
+    --brown-color:#933C24;
+    --gold-color:#E9BD8C;
+    --black-color:#111111;
+    --white-color:#F5F5F5;
+
+    --heading-size:4rem;
+}
+
+::selection{
+    color: var(--brown-color);
+    background: var(--gold-color);
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--brown-color);
+}
+::-webkit-scrollbar-track{
+    background: var(--gold-color);
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+h1,h2,h3{
+    font-family: var(--heading-font);
+}
+
+header ul li:hover{
+    color: var(--gold-color);
+}
+
+.hero-sec{
+    background: url(images/hero-bg.png) no-repeat center / cover;
+}
+
+.hero-sec span{
+color: var(--gold-color);
+}
+.hero-sec h1{
+color: var(--white-color);
+}
+
+.btn-primary{
+    font-weight: 600;
+    color: var(--white-color);
+    background: var(--brown-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background: #75240d;
+}
+
+.btn-outline{
+    color: var(--gold-color);
+    transition: 0.3s;
+}
+.btn-outline:hover{
+    color: #b68247;
+}
+
+.top-products .card{
+    background: url(images/cards/card-bg.png) no-repeat center / cover;
+    color: #fff;
+}
+
+.offer{
+    height: 442px;
+    background: url(images/discount-bg.png) no-repeat center / cover;
+}
+
+.offer h3{
+color: var(--brown-color);
+}
+
+.offer p{
+color: #5d5d5d;
+}
+
+.about-us{
+    height: 454px;
+    background: url(images/about-bg.png) no-repeat center / cover;
+}
+
+.about-us h3{
+    color: var(--white-color);
+    }
+    
+    .about-us p{
+    color: #B9B9B9;
+    }
+
+    footer{
+        background: url(images/footer-bg.png) no-repeat center / cover;
+    }
+    
+    footer .social-media{
+        color: var(--gold-color);
+    }
+
+    footer h4,footer span{
+        color: var(--gold-color);
+    }
+
+    footer a{
+        color: var(--white-color);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    footer .bottom{
+        color:#737373;
+        
+    }

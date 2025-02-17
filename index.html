@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="absolute w-full py-5 px-3 flex items-center justify-between lg:justify-start z-50">
+        <div class="logo md:mx-16 cursor-pointer">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="hidden md:flex mx-16 text-white font-semibold">
+                <li class="px-4"><a href="#">Home</a></li>
+                <li class="px-4"><a href="#">Blog</a></li>
+                <li class="px-4"><a href="#">Contact Us</a></li>
+                <li class="px-4"><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <button id="menu-barBtn" class="md:hidden">
+            <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>
+        </button>
+            <ul  id="mobile-menu" class=" absolute hidden flex flex-col items-center text-white bg-orange-900 font-bold py-8 left-0 right-0 top-full z-40">
+                <li class="p-4"><a href="#">Home</a></li>
+                <li class="p-4"><a href="#">Blog</a></li>
+                <li class="p-4"><a href="#">Contact Us</a></li>
+                <li class="p-4"><a href="#">Services</a></li>
+            </ul>
+    </header>
+    <section class="hero-sec min-h-screen flex items-center">
+        <div class="content flex flex-col sm:gap-16 ml-6 sm:ml-32">
+            <div class="title">
+                <span class="text-xl sm:text-2xl font-semibold">Delicious Cafe</span>
+                <h1 class="text-5xl md:text-7xl leading-20">Sweet Treats, <br> Perfect Eats</h1>
+            </div>
+            <div class="btns">
+                <button class="btn-primary block sm:inline sm:text-xl py-4 px-7 mb-4 sm:mb-0 sm:mr-4">Shop Now</button>
+                <button class="btn-outline sm:text-xl font-semibold cursor-pointer">Learn More <i
+                        class="fa-solid fa-arrow-right-long pl-1 align-middle"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="top-products py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl sm:text-6xl text-center mb-8">Top Products</h2>
+            <div class="cards grid gap-4 md:grid-cols-2 lg:grid-cols-[repeat(3,350px)] justify-center">
+                <div class="card flex flex-col justify-around px-4">
+                    <div class="img-box w-full h-1/2">
+                        <img class="max-w-full h-auto object-cover mx-auto" src="images/cards/1.png" alt="">
+                    </div>
+                    <div class="card-details px-8">
+                        <div class="card-price flex justify-between my-3.5">
+                            <h4>$40</h4>
+                            <i
+                                class="fa-solid fa-exclamation text-xl text-white border-2 border-solid border-white py-1 px-3 rounded-full"></i>
+                        </div>
+                        <div class="card-title flex justify-between">
+                            <h4 class="max-w-28">Whole Grain Bread</h4>
+                            <button class="btn-primary py-0.5 px-3">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex flex-col justify-around">
+                    <div class="img-box w-full h-1/2 ">
+                        <img class="max-w-full h-auto object-cover mx-auto" src="images/cards/2.png" alt="">
+                    </div>
+                    <div class="card-details px-8">
+                        <div class="card-price flex justify-between my-3.5">
+                            <h4>$40</h4>
+                            <i
+                                class="fa-solid fa-exclamation text-xl text-white border-2 border-solid border-white py-1 px-3 rounded-full"></i>
+                        </div>
+                        <div class="card-title flex justify-between">
+                            <h4 class="max-w-28">Whole Grain Bread</h4>
+                            <button class="btn-primary py-0.5 px-3">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex flex-col justify-around">
+                    <div class="img-box w-full h-1/2 ">
+                        <img class="max-w-full h-auto object-cover mx-auto" src="images/cards/3.png" alt="">
+                    </div>
+                    <div class="card-details px-8">
+                        <div class="card-price flex justify-between my-3.5">
+                            <h4>$40</h4>
+                            <i
+                                class="fa-solid fa-exclamation text-xl text-white border-2 border-solid border-white py-1 px-3 rounded-full"></i>
+                        </div>
+                        <div class="card-title flex justify-between">
+                            <h4 class="max-w-28">Whole Grain Bread</h4>
+                            <button class="btn-primary py-0.5 px-3">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex flex-col justify-around">
+                    <div class="img-box w-full h-1/2 ">
+                        <img class="max-w-full h-auto object-cover mx-auto" src="images/cards/4.png" alt="">
+                    </div>
+                    <div class="card-details px-8">
+                        <div class="card-price flex justify-between my-3.5">
+                            <h4>$40</h4>
+                            <i
+                                class="fa-solid fa-exclamation text-xl text-white border-2 border-solid border-white py-1 px-3 rounded-full"></i>
+                        </div>
+                        <div class="card-title flex justify-between">
+                            <h4 class="max-w-28">Whole Grain Bread</h4>
+                            <button class="btn-primary py-0.5 px-3">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex flex-col justify-around">
+                    <div class="img-box w-full h-1/2 ">
+                        <img class="max-w-full h-auto object-cover mx-auto" src="images/cards/5.png" alt="">
+                    </div>
+                    <div class="card-details px-8">
+                        <div class="card-price flex justify-between my-3.5">
+                            <h4>$40</h4>
+                            <i
+                                class="fa-solid fa-exclamation text-xl text-white border-2 border-solid border-white py-1 px-3 rounded-full"></i>
+                        </div>
+                        <div class="card-title flex justify-between">
+                            <h4 class="max-w-28">Whole Grain Bread</h4>
+                            <button class="btn-primary py-0.5 px-3">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex flex-col justify-around">
+                    <div class="img-box w-full h-1/2 ">
+                        <img class="max-w-full h-auto object-cover mx-auto" src="images/cards/6.png" alt="">
+                    </div>
+                    <div class="card-details px-8">
+                        <div class="card-price flex justify-between my-3.5">
+                            <h4>$40</h4>
+                            <i
+                                class="fa-solid fa-exclamation text-xl text-white border-2 border-solid border-white py-1 px-3 rounded-full"></i>
+                        </div>
+                        <div class="card-title flex justify-between">
+                            <h4 class="max-w-28">Whole Grain Bread</h4>
+                            <button class="btn-primary py-0.5 px-3">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offer flex justify-center items-center text-center">
+        <div class="content">
+            <h3 class="text-4xl sm:text-5xl font-medium max-w-2xs text-center mx-auto tracking-wide">20% Off Your First Order</h3>
+            <p class="text-xl sm:text-2xl max-w-96 my-8">Suspenses ac rhoncus nisl, eu tempor urna. Curabitur vel bibenjgg.</p>
+            <button class="btn-primary sm:text-xl py-4 px-7 ">Learn More</button>
+        </div>
+    </section>
+    <section class="explore py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl sm:text-6xl text-center mb-8">Explore More</h2>
+            <ul
+                class="labels text-gray-500 font-semibold flex flex-col md:flex-row justify-center items-center gap-x-8 border-b-2 border-solid border-gray-200 my-10">
+                <li
+                    class="border-b-4 border-b-transparent border-solid hover:border-b-amber-950 cursor-pointer rounded-b-xs duration-300">
+                    Cake</li>
+                <li
+                    class="border-b-4 border-b-transparent border-solid hover:border-b-amber-950 cursor-pointer rounded-b-xs duration-300">
+                    Muffins</li>
+                <li
+                    class="border-b-4 border-b-transparent border-solid hover:border-b-amber-950 cursor-pointer rounded-b-xs duration-300">
+                    Croissant</li>
+                <li
+                    class="border-b-4 border-b-transparent border-solid hover:border-b-amber-950 cursor-pointer rounded-b-xs duration-300">
+                    Bread</li>
+                <li
+                    class="border-b-4 border-b-transparent border-solid hover:border-b-amber-950 cursor-pointer rounded-b-xs duration-300">
+                    Tart</li>
+                <li
+                    class="border-b-4 border-b-transparent border-solid hover:border-b-amber-950 cursor-pointer rounded-b-xs duration-300">
+                    Favorite</li>
+            </ul>
+            <div class="cards grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="/images/explore/1.png" alt="">
+                </div>
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="/images/explore/2.png" alt="">
+                </div>
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="/images/explore/3.png" alt="">
+                </div>
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="/images/explore/4.png" alt="">
+                </div>
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="/images/explore/5.png" alt="">
+                </div>
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="/images/explore/6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us flex justify-center items-center text-center">
+        <div class="content">
+            <h3 class="text-4xl sm:text-5xl font-medium max-w-2xs text-center mx-auto tracking-wide">About us</h3>
+            <p class="text-xl sm:text-2xl max-w-96 my-8">Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
+                Morbi convallis.</p>
+            <button class="btn-primary sm:text-xl py-4 px-7 ">Read More</button>
+        </div>
+    </section>
+    <section class="Featured py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl sm:text-6xl text-center mb-16">Featured Treats</h2>
+            <div class="cards grid gap-4 md:grid-cols-1 lg:grid-cols-3 justify-items-center">
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="images/featured/1.png" alt="">
+                </div>
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="images/featured/2.png" alt="">
+                </div>
+                <div class="card">
+                    <img class="hover:scale-105 duration-300 cursor-pointer" src="images/featured/3.png" alt="">
+                </div>
+                </div>
+        </div>
+    </section>
+    <footer class="py-12 px-16">
+        <div class="container mx-auto">
+            <div class="top flex flex-col md:flex-row justify-between items-center gap-3 pb-4 border-b-1 border-solid border-orange-50">
+                <div class="logo">
+                    <img class="cursor-pointer" src="images/footer-logo.png" alt="logo">
+                </div>
+                <div class="social-media text-3xl flex flex-col md:flex-row items-center gap-3 md:gap-10 md:self-end">
+                    <span class="text-2xl font-semibold">Follow us</span>
+<span class="flex gap-3 md:gap-10">
+    <i class="fa-brands fa-facebook text-4xl cursor-pointer hover:text-orange-400"></i>
+    <i class="fa-brands fa-pinterest text-4xl cursor-pointer hover:text-orange-400"></i>
+    <i class="fa-brands fa-whatsapp text-4xl cursor-pointer hover:text-orange-400"></i>
+    <i class="fa-brands fa-instagram text-4xl cursor-pointer hover:text-orange-400"></i>
+</span>
+                </div>
+            </div>
+            <div class="links grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 text-center md:text-left gap-3">
+                <div class="col flex flex-col gap-4">
+                    <h4 class="text-2xl font-bold">About Us</h4>
+                    <a class="hover:translate-x-2 duration-300" href="#">(456) 789-12301</a>
+                    <a class="hover:translate-x-2 duration-300" href="#">info@modrino.co.uk</a>
+                    <a class="hover:translate-x-2 duration-300" href="#">South 13th street</a>
+                    <a class="hover:translate-x-2 duration-300" href="#">New york America</a>
+                </div>
+                <div class="col flex flex-col gap-4">
+                    <h4 class="text-2xl font-bold">Explore</h4>
+                    <a class="hover:translate-x-2 duration-300" href="#">Home</a>
+                    <a class="hover:translate-x-2 duration-300" href="#">Blog</a>
+                    <a class="hover:translate-x-2 duration-300" href="#">Contact us</a>
+                    <a class="hover:translate-x-2 duration-300" href="#">Services</a>
+                </div>
+                <div class="col flex flex-col gap-8 md:gap-4">
+                    <h4 class="text-2xl font-bold">Recent News</h4>
+                    <div class="article flex flex-col md:flex-row items-center gap-3 hover:translate-x-2 duration-300">
+                        <div class="img-box">
+                            <img class="cursor-pointer" src="images/footer-news-1.png" alt="">
+                        </div>
+                        <div class="article-title flex flex-col">
+                            <span>June 14,2024</span>
+                            <a href="#">Puff pastry bliss.</a>
+                        </div>
+                    </div>
+                    <div class="article flex flex-col md:flex-row items-center gap-3 hover:translate-x-2 duration-300">
+                        <div class="img-box">
+                            <img class="cursor-pointer" src="images/footer-news-2.png" alt="">
+                        </div>
+                        <div class="article-title flex flex-col">
+                            <span>June 14,2024</span>
+                            <a href="#">Puff pastry bliss.</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom text-center mt-8 text-2xl">
+                © 2024 Bake House. All rights reserved
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
